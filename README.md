@@ -1,4 +1,4 @@
-# Hamam CRM Web Projct |
+# Hamam CRM Web Projct
 Avrasya Hamam CRM Application 
 
 # Projeyi localde çalıştırmak için 
