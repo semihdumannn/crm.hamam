@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="csrf-token" content="0lyugjDGxMmULsJOcdsPfEU16amx8XJ190HIEfhQ">
     <title>{{ config('app.name', 'Laravel') }} | @yield('title')</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet">
     <link id="gull-theme" rel="stylesheet" href="/assets/styles/css/themes/lite-purple.min.css">
     <link rel="stylesheet" href="/assets/styles/vendor/perfect-scrollbar.css">
+    <link rel="stylesheet" href="/assets/styles/vendor/toastr.css">
     @yield('pageCss')
 </head>
 
@@ -202,20 +202,25 @@
     @yield('guestContent')
 @endauth
 
-
-
-
 <!-- ============ Large Sidebar Layout End ============= -->
 <script src="/assets/js/common-bundle-script.js"></script>
 <script src="/assets/js/es5/script.min.js"></script>
+<script src="/assets/js/vendor/toastr.min.js"></script>
+
 @yield('pageJs')
 
-<script src="/assets/js/vendor/echarts.min.js"></script>
-<script src="/assets/js/es5/echart.options.min.js"></script>
-<script src="/assets/js/es5/dashboard.v1.script.js"></script>
 <script src="/assets/js/es5/sidebar.large.script.min.js"></script>
-<script src="/assets/js/es5/customizer.script.min.js"></script>
 
+@if(\Illuminate\Support\Facades\Session::has('toaster')  )
+    {!!  \Illuminate\Support\Facades\Session::get('toaster') !!}
+@endif
 
+<script>
+    $.ajaxSetup({
+        headers : {
+            'X-CSRF-TOKEN' : $('meta[name=csrf-token]').val()
+        }
+    });
+</script>
 </body>
 </html>

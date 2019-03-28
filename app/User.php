@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -52,9 +53,32 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
+    /**
+     * @return string
+     * Full Name Accessor
+     */
     public function getFullNameAttribute()
     {
         return $this->name.' '.$this->surname; //mb_strtoupper($this->name).' '.mb_strtoupper($this->surname);
+    }
+
+    public function getCreatedAtColumn()
+    {
+        return Carbon::parse($this->created_at)->format('d-m-Y');
+    }
+
+    /**
+     * @param $parmater
+     * Setters function
+     */
+    public function setNameAttribute($name)
+    {
+        $this->name = mb_strtoupper($name);
+    }
+
+    public function setSurname($surname)
+    {
+        $this->surname = $surname;
     }
 
 

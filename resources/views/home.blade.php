@@ -55,3 +55,10 @@
 
     </div>
 @endsection
+
+
+@section('pageJs')
+    <script src="/assets/js/vendor/echarts.min.js"></script>
+    <script src="/assets/js/es5/echart.options.min.js"></script>
+    <script src="/assets/js/es5/dashboard.v1.script.js"></script>
+@endsection

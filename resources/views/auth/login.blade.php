@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Sisteme Giriş')
 @section('guestContent')
     <div class="auth-layout-wrap" style="background-image: url(/assets/images/photo-wide-4.jpg)">
         <div class="auth-content">

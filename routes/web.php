@@ -29,5 +29,9 @@ Auth::routes();
 Route::middleware('auth:web')->namespace('Web')->group(function (){
 
     Route::get('/','HomeController@home');
+
+    Route::resource('product','ProductController');
+    Route::resource('stock','StockController');
+    Route::resource('package','PackageController');
 });
 

@@ -8,59 +8,59 @@
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item " data-item="uikits">
-                <a class="nav-item-hold" href="#">
+            <li class="nav-item" >
+                <a class="nav-item-hold" href="{{route('product.index')}}">
                     <i class="nav-icon i-Library"></i>
-                    <span class="nav-text">UI kits</span>
+                    <span class="nav-text">Ürünler</span>
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item " data-item="extrakits">
-                <a class="nav-item-hold" href="#">
+            <li class="nav-item" >
+                <a class="nav-item-hold" href="{{route('stock.index')}}">
                     <i class="nav-icon i-Suitcase"></i>
-                    <span class="nav-text">Extra kits</span>
+                    <span class="nav-text">Stok</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="apps">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-Computer-Secure"></i>
-                    <span class="nav-text">Apps</span>
+                    <span class="nav-text">Raporlar</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="forms">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-File-Clipboard-File--Text"></i>
-                    <span class="nav-text">Forms</span>
+                    <span class="nav-text">Aboneler</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item ">
                 <a class="nav-item-hold" href="datatables/basic-tables.html">
                     <i class="nav-icon i-File-Horizontal-Text"></i>
-                    <span class="nav-text">Datatables</span>
+                    <span class="nav-text">Paketler</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="sessions">
                 <a class="nav-item-hold" href="test.html">
                     <i class="nav-icon i-Administrator"></i>
-                    <span class="nav-text">Sessions</span>
+                    <span class="nav-text">Personel</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item " data-item="others">
                 <a class="nav-item-hold" href="#">
                     <i class="nav-icon i-Double-Tap"></i>
-                    <span class="nav-text">Others</span>
+                    <span class="nav-text">Log Kayıtları</span>
                 </a>
                 <div class="triangle"></div>
             </li>
             <li class="nav-item">
-                <a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank">
+                <a class="nav-item-hold" href="http://www.semihduman.com.tr" target="_blank">
                     <i class="nav-icon i-Safe-Box1"></i>
-                    <span class="nav-text">Doc</span>
+                    <span class="nav-text">Destek</span>
                 </a>
                 <div class="triangle"></div>
             </li>
